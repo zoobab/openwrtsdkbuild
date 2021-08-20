@@ -1,9 +1,13 @@
-= How to build
+# Build your own PPA package for OpenWRT
+
+## How to build
 
 This is an example of an helloworld written in C++:
 
 ```
 $ docker build --build-arg giturl=https://github.com/zoobab/openwrt_helloworld --build-arg packname=helloworld -t hellowordcpp .
+
+## Example of output
 
 Sending build context to Docker daemon  79.36kB
 Step 1/12 : FROM zoobab/openwrtsdk
