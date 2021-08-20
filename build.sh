@@ -10,4 +10,4 @@ giturl="$1"
 packname="$2"
 imagename="$3"
 
-docker build --build-arg giturl="$giturl" --build-arg packname="$packname" -t "$imagename" .
+docker build --no-cache --build-arg giturl="$giturl" --build-arg packname="$packname" -t "$imagename" .
