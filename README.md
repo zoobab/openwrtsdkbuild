@@ -28,22 +28,27 @@ $ ./run.sh helloworldcpp
 caf1eb23f020b45c996e64c7c9d3cfb1a68b97320e97daf61df354c865df4acd
 ```
 
-A Curl client should output something:
+A lynx client should output something:
 
 ```
-$ curl http://localhost:8000/bin/
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"><html>
-<title>Directory listing for /bin/</title>
-<body>
-<h2>Directory listing for /bin/</h2>
-<hr>
-<ul>
-<li><a href="packages/">packages/</a>
-<li><a href="targets/">targets/</a>
-</ul>
-<hr>
-</body>
-</html>
+$ lynx -dump http://localhost:8000/bin/packages/x86_64/myrepo/
+Directory listing for /bin/packages/x86_64/myrepo/
+     __________________________________________________________________
+
+     * [1]helloworld_1.0-1_x86_64.ipk
+     * [2]Packages
+     * [3]Packages.gz
+     * [4]Packages.manifest
+     * [5]Packages.sig
+     __________________________________________________________________
+
+Références
+
+   1. http://localhost:8000/bin/packages/x86_64/myrepo/helloworld_1.0-1_x86_64.ipk
+   2. http://localhost:8000/bin/packages/x86_64/myrepo/Packages
+   3. http://localhost:8000/bin/packages/x86_64/myrepo/Packages.gz
+   4. http://localhost:8000/bin/packages/x86_64/myrepo/Packages.manifest
+   5. http://localhost:8000/bin/packages/x86_64/myrepo/Packages.sig
 ```
 
 ## Example of output
