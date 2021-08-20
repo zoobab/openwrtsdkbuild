@@ -6,9 +6,13 @@ This is an example of an helloworld written in C++:
 
 ```
 $ docker build --build-arg giturl=https://github.com/zoobab/openwrt_helloworld --build-arg packname=helloworld -t hellowordcpp .
+```
 
 ## Example of output
 
+This is an output example:
+
+```
 Sending build context to Docker daemon  79.36kB
 Step 1/12 : FROM zoobab/openwrtsdk
  ---> b9618c104016
