@@ -16,6 +16,36 @@ Where:
 2. `helloworld` is the directory name containing the OpenWRT Makefiles
 3. `helloworldcpp` is the docker image name that will be stored on disk. You can put any imagename format that is supported by Docker.
 
+## How to serve
+
+Right now there is a Python webserver serving the content:
+
+```
+$ ./run.sh
+Usage: ./run.sh imagename
+Example: ./run.sh helloworldcpp
+$ ./run.sh helloworldcpp
+caf1eb23f020b45c996e64c7c9d3cfb1a68b97320e97daf61df354c865df4acd
+```
+
+A Curl client should output something:
+
+```
+$ curl http://localhost:8000/bin/
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"><html>
+<title>Directory listing for /bin/</title>
+<body>
+<h2>Directory listing for /bin/</h2>
+<hr>
+<ul>
+<li><a href="packages/">packages/</a>
+<li><a href="targets/">targets/</a>
+</ul>
+<hr>
+</body>
+</html>
+```
+
 ## Example of output
 
 This is an output example:
