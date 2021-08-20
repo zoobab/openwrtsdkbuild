@@ -1,4 +1,4 @@
-FROM openwrtsdk
+FROM zoobab/openwrtsdk
 ARG giturl
 ARG packname
 RUN [ -z "$giturl" ] && echo "giturl is required" && exit 1 || true
