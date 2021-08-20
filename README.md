@@ -5,8 +5,16 @@
 This is an example of an helloworld written in C++:
 
 ```
-$ docker build --build-arg giturl=https://github.com/zoobab/openwrt_helloworld --build-arg packname=helloworld -t hellowordcpp .
+$ ./build.sh
+Usage: ./build.sh giturl packname imagename
+Example: ./build.sh https://github.com/zoobab/openwrt_helloworld helloworld helloworldcpp
 ```
+
+Where:
+
+1. `https://github.com/zoobab/openwrt_helloworld` is the URL of the GIT repo containing the OpenWRT packages
+2. `helloworld` is the directory name containing the OpenWRT Makefiles
+3. `helloworldcpp` is the docker image name that will be stored on disk. You can put any imagename format that is supported by Docker.
 
 ## Example of output
 
