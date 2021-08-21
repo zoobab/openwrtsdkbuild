@@ -8,8 +8,8 @@ This is an example of an helloworld project written in C++ (https://github.com/z
 
 ```
 $ ./build.sh
-Usage: ./build.sh giturl packname imagename
-Example: ./build.sh https://github.com/zoobab/openwrt_helloworld helloworld helloworldcpp
+Usage: $0 giturl packname imagename arch subarch relver
+Example: $0 https://github.com/zoobab/openwrt_helloworld helloworld helloworldcpp x86 64 21.02.0-rc4
 ```
 
 Where:
@@ -17,6 +17,9 @@ Where:
 1. `https://github.com/zoobab/openwrt_helloworld` is the URL of the GIT repo containing the OpenWRT packages
 2. `helloworld` is the directory name containing the OpenWRT Makefiles
 3. `helloworldcpp` is the docker image name that will be stored on disk. You can put any imagename format that is supported by Docker.
+4. `x86` is the target (see `targets.txt` for the full list).
+5. `64` is the subarch.
+6. `21.02.0-rc4` is the release version.
 
 ## How to serve
 
